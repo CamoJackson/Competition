@@ -1,19 +1,19 @@
 import java.util.Scanner;
 public class DND{
-   public void main(String[] args){
+   public static void main(String[] args){
       System.out.print("Name:");
       Scanner keyboard = new Scanner(System.in);
       String Name = keyboard.next();
       
-      System.out.println("Name:"+Name);
-      System.out.println("  Strength:"+value());
-      System.out.println("  Constitution:"+value());
-      System.out.println("  Dexterity:"+value());
-      System.out.println("  Intelligence:"+value());
-      System.out.println("  Wisdom:"+value());
-      System.out.println("  Charisma:"+value());
+      System.out.println("Name: " + Name);
+      System.out.println("  Strength: " + value());
+      System.out.println("  Constitution: " + value());
+      System.out.println("  Dexterity: " + value());
+      System.out.println("  Intelligence: " + value());
+      System.out.println("  Wisdom: " + value());
+      System.out.println("  Charisma: " + value());
    }
-   public int value() {
+   public static int value() {
    //double[] myAr = new double[NUMITEMS];
       int d1 = (int) Math.random()*6;
       int d2 = (int) Math.random()*6;
@@ -38,5 +38,6 @@ public class DND{
       }
    
       int value = d1 + d2 + d3 + d4;
+      return value;
    }
 }
