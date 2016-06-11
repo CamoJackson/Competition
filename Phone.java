@@ -6,19 +6,19 @@ public class Phone{
       System.out.print("Phone Number: ");
       String phoneNumber = keyboard.next();
       String translate = "";
-      for(int k = 0; phoneNumber.length() <= k; k++){
-         switch (phoneNumber.charAt(k)){
-            case 1:
-            case 2:
-            case 3:
-            case 4:
-            case 5:
-            case 6:
-            case 7:
-            case 8:
-            case 9:
-            case 0:
-               translate = translate + phoneNumber.charAt(k);
+      for(int k = 1; 11 >= k; k++){
+         switch (phoneNumber.charAt((k- 1))){
+            case '1':
+            case '2':
+            case '3':
+            case '4':
+            case '5':
+            case '6':
+            case '7':
+            case '8':
+            case '9':
+            case '0':
+               translate = translate + phoneNumber.charAt(k -1);
                break;
             case 'A':
             case 'B':
@@ -64,5 +64,6 @@ public class Phone{
                break;
          }
       }
+      System.out.println("Translated: " + translate);
    }
 }
