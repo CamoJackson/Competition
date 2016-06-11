@@ -14,18 +14,15 @@ public class DND{
       System.out.println("  Intelligence:"+"");
       System.out.println("  Wisdom:"+"");
       System.out.println("  Charisma:"+"");
-   }
-   public static int Value
+      }
+   public static int d1;
+   public static int d2;
+   public static int d3;
+   public static int d4;
+   
+   public static int value;
 {
-
-
- 
-   public static void main(String[] args)
    //double[] myAr = new double[NUMITEMS];
-value = (int) Math.random()*18
-
-
-
 d1 = (int) Math.random()*6;
 d2 = (int) Math.random()*6;
 d3 = (int) Math.random()*6; 
@@ -50,4 +47,5 @@ d4 = 0;
 
 value = d1 + d2 + d3 + d4;
 
+}
 }
