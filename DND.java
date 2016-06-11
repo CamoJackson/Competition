@@ -1,22 +1,19 @@
 import java.util.Scanner;
 public class DND{
-   public static void main(String[] args){
+   public void main(String[] args){
+      System.out.print("Name:");
       Scanner keyboard = new Scanner(System.in);
       String Name = keyboard.next();
-     
-     
-     
-     
+      
       System.out.println("Name:"+Name);
-      System.out.println("  Strength:"+"");
-      System.out.println("  Constitution:"+"");
-      System.out.println("  Dexterity:"+"");
-      System.out.println("  Intelligence:"+"");
-      System.out.println("  Wisdom:"+"");
-      System.out.println("  Charisma:"+"");
+      System.out.println("  Strength:"+value());
+      System.out.println("  Constitution:"+value());
+      System.out.println("  Dexterity:"+value());
+      System.out.println("  Intelligence:"+value());
+      System.out.println("  Wisdom:"+value());
+      System.out.println("  Charisma:"+value());
    }
-   public int Value; 
-   {
+   public int value() {
    //double[] myAr = new double[NUMITEMS];
       int d1 = (int) Math.random()*6;
       int d2 = (int) Math.random()*6;
