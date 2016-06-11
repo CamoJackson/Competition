@@ -63,6 +63,8 @@ public class Phone{
                translate = translate + "9";
                break;
          }
+         if(k == 1 || k == 4 || k == 7)  
+            translate = translate + "-";
       }
       System.out.println("Translated: " + translate);
    }
