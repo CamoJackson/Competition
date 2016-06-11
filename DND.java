@@ -24,15 +24,15 @@ public class DND{
       {
          d1 = 0;
       }
-      if ((d2 < d1) && (d2 < d3) && (d2 < d4))
+      else if ((d2 < d1) && (d2 < d3) && (d2 < d4))
       {
          d2 = 0;
       }
-      if ((d3 < d2) && (d3 < d1) && (d3 < d4))
+      else if ((d3 < d2) && (d3 < d1) && (d3 < d4))
       {
          d3 = 0;
       }
-      if ((d4 < d2) && (d4 < d3) && (d1 < d4))
+      else if ((d4 < d2) && (d4 < d3) && (d1 < d4))
       {
          d4 = 0;
       }
