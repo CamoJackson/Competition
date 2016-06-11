@@ -15,4 +15,39 @@ public class DND{
       System.out.println("  Wisdom:"+"");
       System.out.println("  Charisma:"+"");
    }
+   public static int Value
+{
+
+
+ 
+   public static void main(String[] args)
+   //double[] myAr = new double[NUMITEMS];
+value = (int) Math.random()*18
+
+
+
+d1 = (int) Math.random()*6;
+d2 = (int) Math.random()*6;
+d3 = (int) Math.random()*6; 
+d4 = (int) Math.random()*6;
+
+if ((d1 < d2) && (d1 < d3) && (d1 < d4))
+{
+d1 = 0;
+}
+if ((d2 < d1) && (d2 < d3) && (d2 < d4))
+{
+d2 = 0;
+}
+if ((d3 < d2) && (d3 < d1) && (d3 < d4))
+{
+d3 = 0;
+}
+if ((d4 < d2) && (d4 < d3) && (d1 < d4))
+{
+d4 = 0;
+}
+
+value = d1 + d2 + d3 + d4;
+
 }
